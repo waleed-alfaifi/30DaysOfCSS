@@ -1,0 +1,98 @@
+html {
+  font-size: 10px;
+}
+
+.card {
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0.9rem 2.5rem rgba(132, 128, 177, 0.2774);
+          box-shadow: 0 0.9rem 2.5rem rgba(132, 128, 177, 0.2774);
+  width: 42.7rem;
+  height: 19.2rem;
+  padding: 3.5rem;
+  border-radius: 1.5rem;
+}
+
+.card .grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: '. . .' 'card-img card-body card-body' '. card-footer card-footer';
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+}
+
+.card-body {
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card-body;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #f7f7fc;
+  border: 1px solid #e5e4ee;
+  border-radius: 1rem;
+  margin-right: 2.5rem;
+}
+
+.card-body::after {
+  content: '';
+  background-color: #f7f7fc;
+  border: 1px solid;
+  border-color: transparent transparent #e5e4ee #e5e4ee;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: -1rem;
+  bottom: 30%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.card-body p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #181937;
+  line-height: 2.3rem;
+}
+
+.card-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: card-footer;
+  margin-right: 2.5rem;
+}
+
+.card-img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card-img;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 7.6rem;
+  height: 7.6rem;
+  border-radius: 50%;
+}
+
+.card-action {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#738af0), to(#7bbdff));
+  background-image: linear-gradient(to right, #738af0, #7bbdff);
+  -webkit-box-shadow: 0 1rem 1.2rem #79affb;
+          box-shadow: 0 1rem 1.2rem #79affb;
+  border-radius: 2.35rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
