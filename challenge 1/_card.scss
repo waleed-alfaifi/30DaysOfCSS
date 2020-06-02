@@ -1,9 +1,5 @@
-html {
-  font-size: 10px;
-}
-
 @mixin negative-left-margin {
-  margin-left: -1.5rem;
+  margin-left: -0.5rem;
 }
 
 @mixin right-margin {
@@ -11,15 +7,16 @@ html {
 }
 
 .card {
-  // Temporary
-  margin: 0 auto;
-  // Temporary - End
+  position: absolute;
+  left: 36.1rem;
+  top: 25.1rem;
 
-  position: relative;
   background-color: #ffffff;
   box-shadow: 0 0.9rem 2.5rem rgba(#8480b1, 0.2774);
-  width: 49.7rem;
-  height: 19.2rem;
+
+  width: 46.7rem;
+  height: 23.2rem;
+
   padding: 3.5rem;
   border-radius: 1.5rem;
 
@@ -116,32 +113,13 @@ html {
   }
 
   &-action {
-    cursor: pointer;
     color: #fff;
     background-image: linear-gradient(to right, #738af0, #7bbdff 99.21%);
     box-shadow: 0 1rem 1.2rem #79affb;
     border-radius: 2.35rem;
-    border: none;
     width: 100%;
     height: 4.7rem;
 
-    transition: all 0.2s;
-
-    &:hover {
-      transform: translateY(-0.1rem);
-    }
-
-    &:focus,
-    &:active {
-      outline: none;
-      transform: translateY(-0.1rem);
-      box-shadow: 0 0.5rem 1rem rgba(#000, 0.25);
-    }
+    @include button;
   }
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
 }

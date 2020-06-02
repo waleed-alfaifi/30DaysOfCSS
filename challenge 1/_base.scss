@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  position: relative;
+  max-width: 160rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eff1f8;
+  min-height: 95vh;
+}
+
+.circle-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #e7eaf5;
+  width: 74.2rem;
+  height: 74.2rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,52 @@
+.card-2 {
+  position: absolute;
+  left: 52.1rem;
+  bottom: 22.1rem;
+
+  padding: 3rem;
+
+  background-color: #ffffff;
+  height: 14.2rem;
+  width: 54.6rem;
+  border-radius: 1.5rem;
+
+  box-shadow: 0 0.9rem 2.5rem rgba(#8480b1, 0.2774);
+
+  display: flex;
+  justify-self: start;
+  align-items: center;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #181937;
+    line-height: 2.3rem;
+    flex-grow: 1;
+  }
+
+  &-actions {
+    flex-grow: 2;
+  }
+
+  button {
+    width: 7.4rem;
+    height: 5.2rem;
+    border-radius: 2.6rem;
+    color: #fff;
+
+    @include button;
+  }
+
+  button {
+    &:first-child {
+      background-image: linear-gradient(90deg, #738af0 0%, #7bbdff 99.21%);
+      box-shadow: 0 1rem 1.2rem #79affb;
+    }
+
+    &:nth-child(2) {
+      background-image: linear-gradient(90deg, #f0739a 0%, #ff6a7a 99.21%);
+      box-shadow: 0 1rem 1.2rem #f24369;
+      margin-left: 1rem;
+    }
+  }
+}

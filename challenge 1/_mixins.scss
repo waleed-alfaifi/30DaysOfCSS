@@ -1,0 +1,16 @@
+@mixin button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-0.1rem);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.25);
+  }
+}
