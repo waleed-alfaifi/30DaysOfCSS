@@ -6,4 +6,4 @@ Copy the cards on the following link:
 
 ##### Started on _Sunday 31 May, 2020_
 
-##### Finished on _DATE-HERE_
+##### Finished on _Tuesday 2 June, 2020_
