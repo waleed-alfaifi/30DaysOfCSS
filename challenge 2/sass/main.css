@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -20,23 +19,36 @@ body {
   min-height: 80vh;
   text-align: center;
   padding: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.container > * {
+  margin: 0 auto;
 }
 
 .card {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #ffffff;
   color: #403249;
   border-radius: 1.5rem;
   text-align: left;
-  height: 37rem;
   max-width: 35rem;
+}
+
+.card--1 {
+  height: 47rem;
+}
+
+.card--2 {
+  background-color: orangered;
+  height: 47rem;
+  max-width: 60rem;
+}
+
+.card--3 {
+  display: none;
 }
 
 .card__body {
@@ -58,11 +70,19 @@ body {
 }
 
 .card__image {
-  width: 100%;
-  height: 21rem;
-  border-radius: 0 0 1.5rem 1.5rem;
+  flex-grow: 1;
+  background-size: cover;
+}
+
+.card__image--1 {
+  background-image: url('../truck.jpg');
+}
+
+.card__image--2 {
+  flex-grow: 0.5;
+  background-image: url('../airship.jpg');
 }
 
 .card__image--bottom {
-  background-color: red;
+  border-radius: 0 0 1.5rem 1.5rem;
 }
