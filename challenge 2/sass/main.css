@@ -28,6 +28,7 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -42,13 +43,22 @@ body {
 }
 
 .card--2 {
-  background-color: orangered;
   height: 47rem;
   max-width: 60rem;
 }
 
 .card--3 {
   display: none;
+}
+
+.card__label {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  background-color: #bbc1cf;
+  text-transform: uppercase;
+  padding: 0.2rem 1rem;
+  border-radius: 3rem;
 }
 
 .card__body {
@@ -72,17 +82,44 @@ body {
 .card__image {
   flex-grow: 1;
   background-size: cover;
+  background-position: center;
 }
 
 .card__image--1 {
-  background-image: url('../truck.jpg');
+  background-image: url("../truck.jpg");
 }
 
 .card__image--2 {
-  flex-grow: 0.5;
-  background-image: url('../airship.jpg');
+  background-image: url("../airship.jpg");
 }
 
 .card__image--bottom {
   border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.card__image--top {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card__author {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.card__author__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__author__date {
+  color: #acb4ac;
+  font-size: 1.3rem;
+}
+
+.card__author__image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
